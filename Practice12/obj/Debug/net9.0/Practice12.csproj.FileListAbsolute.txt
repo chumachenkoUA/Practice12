@@ -1,0 +1,15 @@
+/home/kirito/RiderProjects/Practice12/Practice12/bin/Debug/net9.0/Practice12
+/home/kirito/RiderProjects/Practice12/Practice12/bin/Debug/net9.0/Practice12.deps.json
+/home/kirito/RiderProjects/Practice12/Practice12/bin/Debug/net9.0/Practice12.runtimeconfig.json
+/home/kirito/RiderProjects/Practice12/Practice12/bin/Debug/net9.0/Practice12.dll
+/home/kirito/RiderProjects/Practice12/Practice12/bin/Debug/net9.0/Practice12.pdb
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/Practice12.GeneratedMSBuildEditorConfig.editorconfig
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/Practice12.AssemblyInfoInputs.cache
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/Practice12.AssemblyInfo.cs
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/Practice12.csproj.CoreCompileInputs.cache
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/Practice12.sourcelink.json
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/Practice12.dll
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/refint/Practice12.dll
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/Practice12.pdb
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/Practice12.genruntimeconfig.cache
+/home/kirito/RiderProjects/Practice12/Practice12/obj/Debug/net9.0/ref/Practice12.dll
