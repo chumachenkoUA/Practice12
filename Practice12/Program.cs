@@ -1,90 +1,64 @@
-﻿class Program
+﻿namespace Practice12
 {
-    static void Main()
+class Program
+{
+    static double Divide(double a, double b)
     {
-        Console.WriteLine("Лабораторна робота 12. Обробка виключень. Поділ дійсних чисел");
-        double numerator = 0, denominator = 0;
-        string input;
-        bool validInput = false;
-        
-        while (!validInput)
+        if (b == 0) 
+            throw new Exception("розподіл на нуль");
+        return a / b;
+    }
+
+    static void Main(string[] args)
+    {
+        try
         {
+            Console.WriteLine("Лабораторна робота 12. Обробка винятків. Поділ дійсних чисел");
+
+            // Ввід чисельника
             Console.Write("Введіть чисельник: ");
-            input = Console.ReadLine();
-
+            string? input = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(input))
-            {
-                Console.WriteLine("Помилка: не введено число!");
-                continue;
-            }
-
+                throw new Exception("Треба ввести число!!!");
             if (input.Length > 15)
-            {
-                Console.WriteLine("Помилка: введено надто довге число!");
-                continue;
-            }
+                throw new Exception("введено надто довге число");
 
+            double numerator;
             try
             {
                 numerator = Convert.ToDouble(input);
-                validInput = true;
             }
-            catch (FormatException)
+            catch
             {
-                Console.WriteLine("Помилка: помилка перетворення (невірний формат числа)!");
+                throw new Exception("помилка перетворення");
             }
-            catch (OverflowException)
-            {
-                Console.WriteLine("Помилка: помилка перетворення (значення занадто велике або мале)!");
-            }
-        }
 
-        validInput = false;
-        
-        while (!validInput)
-        {
+            // Ввід знаменника
             Console.Write("Введіть знаменник: ");
             input = Console.ReadLine();
-
             if (string.IsNullOrWhiteSpace(input))
-            {
-                Console.WriteLine("Помилка: не введено число!");
-                continue;
-            }
-
+                throw new Exception("Треба ввести число!!!");
             if (input.Length > 15)
-            {
-                Console.WriteLine("Помилка: введено надто довге число!");
-                continue;
-            }
+                throw new Exception("введено надто довге число");
 
+            double denominator;
             try
             {
                 denominator = Convert.ToDouble(input);
-                validInput = true;
             }
-            catch (FormatException)
+            catch
             {
-                Console.WriteLine("Помилка: помилка перетворення (невірний формат числа)!");
+                throw new Exception("помилка перетворення");
             }
-            catch (OverflowException)
-            {
-                Console.WriteLine("Помилка: помилка перетворення (значення занадто велике або мале)!");
-            }
+
+            // Виконання ділення
+            double result = Divide(numerator, denominator);
+            Console.WriteLine($"Результат ділення = {result}");
         }
-        
-        try
+        catch (Exception e)
         {
-            if (denominator == 0)
-            {
-                throw new DivideByZeroException();
-            }
-            double result = numerator / denominator;
-            Console.WriteLine($"Результат: {numerator} / {denominator} = {result}");
-        }
-        catch (DivideByZeroException)
-        {
-            Console.WriteLine("Помилка: розподіл на нуль!");
+            Console.WriteLine("Помилка: {0}", e.Message);
         }
     }
+}    
 }
