@@ -5,7 +5,7 @@ class Program
     static double Divide(double a, double b)
     {
         if (b == 0) 
-            throw new Exception("розподіл на нуль");
+            throw new Exception("Ділення на нуль...");
         return a / b;
     }
 
@@ -13,9 +13,8 @@ class Program
     {
         try
         {
-            Console.WriteLine("Лабораторна робота 12. Обробка винятків. Поділ дійсних чисел");
-
-            // Ввід чисельника
+            Console.WriteLine("Лабораторна робота 12. Обробка винятків. \n Варіант 21");
+            
             Console.Write("Введіть чисельник: ");
             string? input = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(input))
