@@ -31,8 +31,7 @@ class Program
             {
                 throw new Exception("помилка перетворення");
             }
-
-            // Ввід знаменника
+            
             Console.Write("Введіть знаменник: ");
             input = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(input))
@@ -49,14 +48,13 @@ class Program
             {
                 throw new Exception("помилка перетворення");
             }
-
-            // Виконання ділення
+            
             double result = Divide(numerator, denominator);
             Console.WriteLine($"Результат ділення = {result}");
         }
         catch (Exception e)
         {
-            Console.WriteLine("Помилка: {0}", e.Message);
+            Console.WriteLine($"Помилка: {e.Message}");
         }
     }
 }    
